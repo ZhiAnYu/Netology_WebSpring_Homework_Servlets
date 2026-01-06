@@ -22,17 +22,18 @@ public class PostRepository {
   }
 
   public Post save(Post post) {
-    if (post.getId() == 0) {
+    final long userId = post.getId();
+    if (userId == 0) {
       // Создаём новый пост
       long newId = currentId.getAndIncrement();
       post.setId(newId);
       posts.put(newId, post);
     } else {
       // Обновляем существующий
-      if (!posts.containsKey(post.getId())) {
-        throw new NotFoundException("Post with id " + post.getId() + " not found");
+      if (!posts.containsKey(userId)) {
+        throw new NotFoundException("Post with id " + userId + " not found");
       }
-      posts.put(post.getId(), post);
+      posts.put(userId, post);
     }
     return post;
   }
