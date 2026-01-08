@@ -1,12 +1,13 @@
 package ru.netology;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import ru.netology.config.JavaConfig;
 import ru.netology.service.PostService;
 
 public class Main {
     public static void main(String[] args) {
         // отдаём список пакетов, в которых нужно искать аннотированные классы
-        final var context = new AnnotationConfigApplicationContext("ru.netology");
+        final var context = new AnnotationConfigApplicationContext(JavaConfig.class);
 
         // получаем по имени бина
         final var controller = context.getBean("postController");

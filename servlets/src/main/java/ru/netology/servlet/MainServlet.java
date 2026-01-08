@@ -1,6 +1,7 @@
 package ru.netology.servlet;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import ru.netology.config.JavaConfig;
 import ru.netology.controller.PostController;
 
 import javax.servlet.http.HttpServlet;
@@ -8,14 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class MainServlet extends HttpServlet {
-//    @Override
-//    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-//        resp.setStatus( HttpServletResponse.SC_EXPECTATION_FAILED);
-//        resp.setHeader("Date", OffsetDateTime.now().toString());
-//        resp.setContentType("application/json");
-//        resp.getWriter().write("ok");
-//    }
-
 
     private PostController controller;
 
@@ -23,7 +16,7 @@ public class MainServlet extends HttpServlet {
     public void init() {
         // Создаём контекст
         AnnotationConfigApplicationContext context =
-                new AnnotationConfigApplicationContext("ru.netology");
+                new AnnotationConfigApplicationContext(JavaConfig.class);
 
         // Получаем контроллер из контекста Spring
         this.controller = context.getBean(PostController.class);
@@ -31,7 +24,6 @@ public class MainServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) {
-        // если деплоились в root context, то достаточно этого
         final String API_POST = "/api/posts";
         try {
             final var path = req.getRequestURI();
