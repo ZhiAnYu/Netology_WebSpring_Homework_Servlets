@@ -24,7 +24,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Твои зависимости (например, Gson) -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
