@@ -2,6 +2,7 @@ package ru.netology.servlet;
 
 import ru.netology.controller.PostController;
 import ru.netology.repository.PostRepository;
+import ru.netology.repository.PostRepositoryImpl;
 import ru.netology.service.PostService;
 
 import javax.servlet.http.HttpServlet;
@@ -11,20 +12,12 @@ import java.io.IOException;
 import java.time.OffsetDateTime;
 
 public class MainServlet extends HttpServlet {
-//    @Override
-//    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-//        resp.setStatus( HttpServletResponse.SC_EXPECTATION_FAILED);
-//        resp.setHeader("Date", OffsetDateTime.now().toString());
-//        resp.setContentType("application/json");
-//        resp.getWriter().write("ok");
-//    }
-
 
     private PostController controller;
 
     @Override
     public void init() {
-        final var repository = new PostRepository();
+        final var repository = new PostRepositoryImpl();
         final var service = new PostService(repository);
         controller = new PostController(service);
     }

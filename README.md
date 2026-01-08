@@ -1,5 +1,12 @@
-##реализация xml
+## Annotation Config — ветка feature/di-annotation.
 
+## Используется внешний WebRunner со скачиванием в корень проекта
+
+curl -L https://repo1.maven.org/maven2/com/github/jsimone/webapp-runner/9.0.27.1/webapp-runner-9.0.27.1.jar -o webapp-runner.jar
+
+## Запуск через
+
+java -jar webapp-runner.jar target/servlets-1.0-SNAPSHOT.war
 # Домашнее задание к занятию «2.1. Servlet Containers»
 
 ## CRUD

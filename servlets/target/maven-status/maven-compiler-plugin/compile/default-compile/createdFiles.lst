@@ -1,4 +1,5 @@
 Main.class
+ru\netology\repository\PostRepositoryImpl.class
 ru\netology\controller\PostController.class
 ru\netology\exception\NotFoundException.class
 ru\netology\servlet\MainServlet.class
