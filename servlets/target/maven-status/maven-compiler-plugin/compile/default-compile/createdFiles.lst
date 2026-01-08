@@ -1,4 +1,5 @@
 ru\netology\controller\PostController.class
+ru\netology\config\JavaConfig.class
 ru\netology\repository\PostRepositoryStubImpl.class
 ru\netology\exception\NotFoundException.class
 ru\netology\Main.class

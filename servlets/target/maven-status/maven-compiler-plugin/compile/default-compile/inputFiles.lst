@@ -1,8 +1,9 @@
-C:\Users\PC\IdeaProjects\jspr-code\04_serlvets\servlets\src\main\java\ru\netology\controller\PostController.java
-C:\Users\PC\IdeaProjects\jspr-code\04_serlvets\servlets\src\main\java\ru\netology\exception\NotFoundException.java
-C:\Users\PC\IdeaProjects\jspr-code\04_serlvets\servlets\src\main\java\ru\netology\Main.java
-C:\Users\PC\IdeaProjects\jspr-code\04_serlvets\servlets\src\main\java\ru\netology\model\Post.java
-C:\Users\PC\IdeaProjects\jspr-code\04_serlvets\servlets\src\main\java\ru\netology\repository\PostRepository.java
-C:\Users\PC\IdeaProjects\jspr-code\04_serlvets\servlets\src\main\java\ru\netology\repository\PostRepositoryStubImpl.java
-C:\Users\PC\IdeaProjects\jspr-code\04_serlvets\servlets\src\main\java\ru\netology\service\PostService.java
-C:\Users\PC\IdeaProjects\jspr-code\04_serlvets\servlets\src\main\java\ru\netology\servlet\MainServlet.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\config\JavaConfig.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\controller\PostController.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\exception\NotFoundException.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\Main.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\model\Post.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\repository\PostRepository.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\repository\PostRepositoryStubImpl.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\service\PostService.java
+C:\Users\Виталий\Desktop\MyHomework\Netology_WebSpring_Homework_Servlets\servlets\src\main\java\ru\netology\servlet\MainServlet.java

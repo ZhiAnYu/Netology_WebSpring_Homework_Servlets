@@ -1,11 +1,18 @@
+
+## Java Config — ветка feature/di-java.
+
+## Используется внешний WebRunner со скачиванием в корень проекта
+
+curl -L https://repo1.maven.org/maven2/com/github/jsimone/webapp-runner/9.0.27.1/webapp-runner-9.0.27.1.jar -o webapp-runner.jar
+
+## Запуск через
+
+java -jar webapp-runner.jar target/servlets-1.0-SNAPSHOT.war
+
 # Домашнее задание к занятию «2.2. Dependency Lookup, Dependency Injection, IoC, Spring, Application Context»
 
+
 В качестве решения пришлите ссылки на ваши GitHub-проекты в личном кабинете студента на сайте [netology.ru](https://netology.ru).
-
-**Важная информация**
-
-1. Перед стартом работы изучите, пожалуйста, ссылки на главной странице [репозитория с домашними заданиями](../README.md).
-2. Если у вас что-то не получилось, тогда оформляйте Issue [по установленным правилам](../report-requirements.md).
 
 ## Как сдавать задачи
 
@@ -19,16 +26,6 @@
 ### Легенда
 
 В рамках лекции мы посмотрели, как использовать Spring для связывания зависимостей.
-
-Возникает вопрос, почему бы не использовать его в вашем приложении с сервлетами и не заменить указанный ниже код на DI со Spring:
-```java
-@Override
-public void init() {
-    final var repository = new PostRepository();
-    final var service = new PostService(repository);
-    controller = new PostController(service);
-}
-```
 
 ### Задача
 
