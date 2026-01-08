@@ -15,7 +15,5 @@ public class Main {
         // получаем по классу бина
         final var service = context.getBean(PostService.class);
 
-        // по умолчанию создаётся лишь один объект на BeanDefinition
-        final var isSame = service == context.getBean("postService");
     }
 }
