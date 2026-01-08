@@ -15,10 +15,5 @@ public class Main {
         final var controller = context.getBean("postController");
         //получаем по классу бина
         final var service = context.getBean(PostService.class);
-        //создается синглтон, проверка
-        final var isSame = service == context.getBean("postService");
-        //репозиторий не создается
-
-
     }
 }

@@ -1,5 +1,6 @@
 package ru.netology.servlet;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import ru.netology.controller.PostController;
 import ru.netology.repository.PostRepository;
 import ru.netology.repository.PostRepositoryImpl;
@@ -17,9 +18,10 @@ public class MainServlet extends HttpServlet {
 
     @Override
     public void init() {
-        final var repository = new PostRepositoryImpl();
-        final var service = new PostService(repository);
-        controller = new PostController(service);
+        // Создаём контекст
+        final var context = new AnnotationConfigApplicationContext("ru.netology");
+        // Получаем контроллер из контекста Spring
+        this.controller = context.getBean(PostController.class);
     }
 
     @Override
