@@ -6,7 +6,7 @@ import ru.netology.service.PostService;
 
 public class Main {
     public static void main(String[] args) {
-        // отдаём список пакетов, в которых нужно искать аннотированные классы
+        // отдаём конфигурационный класс, в котором перечислены классы для создания бинов
         final var context = new AnnotationConfigApplicationContext(JavaConfig.class);
 
         // получаем по имени бина
