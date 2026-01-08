@@ -9,7 +9,7 @@ import ru.netology.service.PostService;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Reader;
-@Controller
+
 public class PostController {
   public static final String APPLICATION_JSON = "application/json";
   private final PostService service;
@@ -47,7 +47,7 @@ public class PostController {
   public void removeById(long id, HttpServletResponse response) throws IOException {
     try {
       service.removeById(id);
-      response.setStatus(HttpServletResponse.SC_NO_CONTENT); // 204 — успешно, но без тела
+      response.setStatus(HttpServletResponse.SC_NO_CONTENT);
     } catch (NotFoundException e) {
       response.setStatus(HttpServletResponse.SC_NOT_FOUND);
     }
